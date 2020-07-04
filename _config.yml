@@ -22,7 +22,6 @@ title: Lucas Sloan
 email: lucas.sloan@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   I'm Lucas Sloan, and I've been playing around with machine learning.
-  This blog details the things I'm working on and the stuff I'm learning!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  LucasSloan
