@@ -24,7 +24,7 @@ Specifically for the Waymo Challenge, the task was to draw bounding boxes around
 
 
 
-![alt_text](/assets/images/ground_truth.png "image_tooltip")
+![Sample Waymo bounding boxes](/assets/images/ground_truth.png "Sample Waymo bounding boxes")
 
 
 There are 5 cameras on the Waymo test vehicle - the front, front right and front left cameras with a resolution of 1920x1280 and the side right and side left cameras with a resolution of 1920x886.
@@ -40,7 +40,7 @@ Almost all object detection models are composed of 2 parts:
 
 
 
-![alt_text](/assets/images/object_detection_diagram.jpg "image_tooltip")
+![Object detection diagram](/assets/images/object_detection_diagram.jpg "Object detection diagram")
 
 
 
@@ -83,7 +83,7 @@ At this point, the deficit versus the Coco AP score had me concerned there was a
 
 
 
-![alt_text](/assets/images/sky_boxes.jpg "image_tooltip")
+![Sample model detections](/assets/images/sky_boxes.jpg "Sample model detections")
 
 
 Which made it clear that the model was basically learning, but it did have weird issues with boxes in the sky.  Interestingly, the equivalent boxes from the side cameras (with their different aspect ratio) didn’t have the weird sky boxes.
@@ -155,7 +155,7 @@ With my final model and the left-right flip test time augmentation, my submissio
 
 
 
-![alt_text](/assets/images/final_leaderboard.png "image_tooltip")
+![Leaderboard](/assets/images/final_leaderboard.png "Leaderboard")
 
 
 There are a bunch of directions to explore for greater performance.  Most obviously, getting multi-resolution TTA working would be a big boost.  Most of the top submissions to the challenge use TTA or are ensembles of multiple models, so clearly it’s an important part of the puzzle.  Another easy bet is fixing the training setup - training from the start with the highest possible resolution and for a longer period.
